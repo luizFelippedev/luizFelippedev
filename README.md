@@ -52,18 +52,6 @@ Olá! Sou Luiz Felipe, um desenvolvedor de software apaixonado por criar soluç�
 
 ---
 
-## 📂 Projetos em Destaque
-
-1. **[Projeto 1 - Nome do Projeto](https://github.com/luizFelippedev/nome-do-projeto)**  
-   - **Descrição:** Uma breve descrição do projeto e suas funcionalidades.  
-   - **Tecnologias:** React, Node.js, MongoDB  
-
-2. **[Projeto 2 - Nome do Projeto](https://github.com/luizFelippedev/nome-do-projeto)**  
-   - **Descrição:** Uma breve descrição do projeto e suas funcionalidades.  
-   - **Tecnologias:** Django, PostgreSQL  
-
----
-
 ## 📈 Estatísticas do GitHub
 
 <p align="center">
