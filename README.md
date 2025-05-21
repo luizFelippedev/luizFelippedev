@@ -7,7 +7,7 @@
 
 ## 🖥️ Sobre Mim
 
-Olá! Sou Luiz Felipe, um desenvolvedor de software apaixonado por criar soluções tecnológicas eficientes e escaláveis. Minha experiência acadêmica e prática me ajudou a desenvolver habilidades em diversas tecnologias, abrangendo frontend, backend e ferramentas de automação.
+Olá! Sou Luiz Felipe, desenvolvedor de software apaixonado por criar soluções tecnológicas eficientes e escaláveis. Minha experiência acadêmica e prática me ajudou a desenvolver habilidades em diversas tecnologias, abrangendo frontend, backend e ferramentas de automação.
 
 ---
 
