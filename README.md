@@ -81,7 +81,7 @@
 
 <div align="center">
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=luizFelippedev&theme=algolia&no-frame=true&no-bg=true&column=8&margin-w=6)](https://github.com/ryo-ma/github-profile-trophy)
+[![trophy](https://github-profile-trophy.vercel.app/?username=luizFelippedev&theme=algolia&no-frame=true&no-bg=true&column=4&margin-w=10&title=Stars,Commits,Repositories,Followers)](https://github.com/ryo-ma/github-profile-trophy)
 
 </div>
 
