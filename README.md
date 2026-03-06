@@ -62,24 +62,24 @@ My work spans frontend architecture, backend services, APIs, cloud integrations,
 
 <div align="center">
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=luizFelippedev&show_icons=true&theme=github_dark&bg_color=0d1117&border_color=21262d&title_color=58a6ff&icon_color=a371f7&text_color=8b949e&border_radius=10&include_all_commits=true&count_private=true&custom_title=GitHub%20Statistics&rank_icon=github" />
-<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=luizFelippedev&layout=compact&theme=github_dark&bg_color=0d1117&border_color=21262d&title_color=58a6ff&text_color=8b949e&border_radius=10&langs_count=8&custom_title=Most%20Used%20Languages" />
+### 🔥 Contribution Streak
+
+<img width="80%" src="https://streak-stats.demolab.com/?user=luizFelippedev&theme=github-dark-blue&background=0d1117&border=21262d&ring=58a6ff&fire=a371f7&currStreakNum=e6edf3&sideNums=58a6ff&currStreakLabel=a371f7&sideLabels=8b949e&dates=3d5263&border_radius=10" />
 
 <br/><br/>
 
-<img width="70%" src="https://streak-stats.demolab.com/?user=luizFelippedev&theme=github-dark-blue&background=0d1117&border=21262d&ring=58a6ff&fire=a371f7&currStreakNum=e6edf3&sideNums=58a6ff&currStreakLabel=a371f7&sideLabels=8b949e&dates=3d5263&border_radius=10" />
-
-<br/><br/>
+### 📈 Contribution Activity
 
 <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=luizFelippedev&bg_color=0d1117&color=58a6ff&line=a371f7&point=e6edf3&area=true&area_color=58a6ff&border_color=21262d&custom_title=Contribution%20Activity%20Graph&hide_border=false&radius=6" />
 
 <br/><br/>
 
-### 🏆 GitHub Trophies
+### ⚡ GitHub Stats
 
-<img width="100%" src="https://github-profile-trophy.vercel.app/?username=luizFelippedev&theme=algolia&no-frame=true&no-bg=true&column=7&margin-w=8&margin-h=8" />
+<img width="49%" src="https://github-readme-stats.vercel.app/api?username=luizFelippedev&show_icons=true&theme=github_dark&bg_color=0d1117&border_color=21262d&title_color=58a6ff&icon_color=a371f7&text_color=8b949e&border_radius=10&include_all_commits=true&count_private=true&custom_title=GitHub%20Statistics&rank_icon=github&cache_seconds=1800" />
+<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=luizFelippedev&layout=compact&theme=github_dark&bg_color=0d1117&border_color=21262d&title_color=58a6ff&text_color=8b949e&border_radius=10&langs_count=8&custom_title=Most%20Used%20Languages&cache_seconds=1800" />
 
-<br/>
+<br/><br/>
 
 ### 🐍 Contribution Snake
 
@@ -103,9 +103,9 @@ My work spans frontend architecture, backend services, APIs, cloud integrations,
 
 <div align="center">
 
-[![Repo1](https://github-readme-stats.vercel.app/api/pin/?username=luizFelippedev&repo=2Document&theme=github_dark&bg_color=0d1117&border_color=21262d&title_color=58a6ff&text_color=8b949e&icon_color=a371f7&border_radius=10)](https://github.com/luizFelippedev/2Document)
+[![Repo1](https://github-readme-stats.vercel.app/api/pin/?username=luizFelippedev&repo=2Document&theme=github_dark&bg_color=0d1117&border_color=21262d&title_color=58a6ff&text_color=8b949e&icon_color=a371f7&border_radius=10&cache_seconds=1800)](https://github.com/luizFelippedev/2Document)
 &nbsp;
-[![Repo2](https://github-readme-stats.vercel.app/api/pin/?username=luizFelippedev&repo=bc-api&theme=github_dark&bg_color=0d1117&border_color=21262d&title_color=58a6ff&text_color=8b949e&icon_color=a371f7&border_radius=10)](https://github.com/luizFelippedev/bc-api)
+[![Repo2](https://github-readme-stats.vercel.app/api/pin/?username=luizFelippedev&repo=bc-api&theme=github_dark&bg_color=0d1117&border_color=21262d&title_color=58a6ff&text_color=8b949e&icon_color=a371f7&border_radius=10&cache_seconds=1800)](https://github.com/luizFelippedev/bc-api)
 
 </div>
 
