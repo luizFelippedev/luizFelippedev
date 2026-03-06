@@ -1,8 +1,8 @@
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,25:0a1628,60:0d2f45,85:0a3d2e,100:00ff8833&height=300&section=header&text=Luiz%20Felipe&fontSize=90&fontColor=ffffff&fontAlignY=38&desc=Senior%20Software%20Engineer%20%E2%80%94%20Full%20Stack%20Developer&descSize=22&descFontColor=00ffaa&descAlignY=60&animation=fadeIn"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,30:0a1628,65:081c14,100:00ff8820&height=280&section=header&text=Luiz%20Felipe&fontSize=88&fontColor=ffffff&fontAlignY=38&fontStyle=bold&desc=Senior%20Software%20Engineer%20%E2%80%94%20Full%20Stack%20Developer&descSize=21&descFontColor=00ffaa&descAlignY=60&animation=fadeIn"/>
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=16&duration=3000&pause=1000&color=00FFAA&center=true&vCenter=true&width=620&lines=_%3E+5%2B+years+crafting+production-grade+software+%E2%9A%A1;_%3E+React+%C2%B7+Node.js+%C2%B7+TypeScript+%C2%B7+Python+%C2%B7+Docker+%C2%B7+AWS;_%3E+Clean+Architecture+%C2%B7+TDD+%C2%B7+Microservices+%C2%B7+CI%2FCD;_%3E+Open+to+Full-time+%7C+Freelance+%7C+Open+Source)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=15&duration=3000&pause=1000&color=00FFAA&center=true&vCenter=true&width=620&lines=_%3E+5%2B+years+crafting+production-grade+software+%E2%9A%A1;_%3E+React+%C2%B7+Node.js+%C2%B7+TypeScript+%C2%B7+Python+%C2%B7+Docker+%C2%B7+AWS;_%3E+Clean+Architecture+%C2%B7+TDD+%C2%B7+Microservices+%C2%B7+CI%2FCD;_%3E+Open+to+Full-time+%7C+Freelance+%7C+Open+Source)](https://git.io/typing-svg)
 
 <br/>
 
@@ -17,116 +17,11 @@
 
 ## 👤 About Me
 
-```ts
-// ╔══════════════════════════════════════════════════════════════════════════╗
-// ║                                                                          ║
-// ║    ██╗     ██╗   ██╗██╗███████╗    ███████╗███████╗██╗     ██╗██████╗   ║
-// ║    ██║     ██║   ██║██║╚══███╔╝    ██╔════╝██╔════╝██║     ██║██╔══██╗  ║
-// ║    ██║     ██║   ██║██║  ███╔╝     █████╗  █████╗  ██║     ██║██████╔╝  ║
-// ║    ██║     ██║   ██║██║ ███╔╝      ██╔══╝  ██╔══╝  ██║     ██║██╔═══╝   ║
-// ║    ███████╗╚██████╔╝██║███████╗    ██║     ███████╗███████╗██║██║       ║
-// ║    ╚══════╝ ╚═════╝ ╚═╝╚══════╝    ╚═╝     ╚══════╝╚══════╝╚═╝╚═╝       ║
-// ║                                                                          ║
-// ║          > SENIOR SOFTWARE ENGINEER  ·  FULL STACK  ·  BRAZIL 🇧🇷        ║
-// ╚══════════════════════════════════════════════════════════════════════════╝
+<div align="center">
 
-/**
- * @file         profile.ts
- * @author       Luiz Felipe <luizfelippetech>
- * @version      2025.1.0
- * @since        2019
- *
- * @description
- *   Senior Software Engineer with 5+ years of experience designing and
- *   shipping scalable, maintainable systems across the full stack.
- *   Passionate about clean code, developer experience, and building
- *   products that actually solve real problems.
- *
- * @role         Senior Software Engineer — Full Stack
- * @location     Brazil 🇧🇷  (UTC-3 · Remote-friendly)
- * @status       ✅  Open to new opportunities
- * @contact      linkedin.com/in/luizfelippetech
- */
+<img src="./about.svg" width="100%" alt="About Luiz Felipe"/>
 
-// ─────────────────────────────────────────────────────────────────────────────
-//  INTERFACES
-// ─────────────────────────────────────────────────────────────────────────────
-
-type Level     = "expert" | "advanced" | "intermediate";
-type Paradigm  = "OOP" | "Functional" | "Reactive" | "Event-Driven";
-
-interface TechStack {
-  languages  : string[];
-  frontend   : string[];
-  backend    : string[];
-  databases  : string[];
-  devops     : string[];
-  cloud      : string[];
-  testing    : string[];
-}
-
-interface Engineer {
-  name        : string;
-  role        : string;
-  experience  : string;
-  stack       : TechStack;
-  paradigms   : Paradigm[];
-  methodology : string[];
-  strengths   : string[];
-  building    : string;
-  openTo      : string[];
-}
-
-// ─────────────────────────────────────────────────────────────────────────────
-//  IMPLEMENTATION
-// ─────────────────────────────────────────────────────────────────────────────
-
-const luizFelipe: Engineer = {
-
-  name        : "Luiz Felipe",
-  role        : "Senior Software Engineer — Full Stack",
-  experience  : "5+ years · 30+ projects shipped to production",
-
-  stack: {
-    languages : ["TypeScript", "JavaScript", "Python", "Java", "Go", "Rust", "Kotlin", "C#"],
-    frontend  : ["React", "Next.js", "Redux", "TailwindCSS", "Sass", "Vite", "Storybook"],
-    backend   : ["Node.js", "NestJS", "Express", "FastAPI", "Django", "Spring Boot", "GraphQL"],
-    databases : ["PostgreSQL", "MongoDB", "Redis", "MySQL", "Elasticsearch", "Supabase"],
-    devops    : ["Docker", "Kubernetes", "GitHub Actions", "Jenkins", "Terraform", "Nginx"],
-    cloud     : ["AWS", "Google Cloud Platform", "Firebase", "Vercel"],
-    testing   : ["Jest", "Vitest", "Cypress", "Playwright", "SonarQube"],
-  },
-
-  paradigms   : ["OOP", "Functional", "Reactive", "Event-Driven"],
-
-  methodology : [
-    "Clean Architecture",   // separation of concerns, testability
-    "SOLID Principles",     // maintainable and extensible code
-    "Test-Driven Dev",      // reliability, fewer regressions
-    "Domain-Driven Design", // business-aligned software modeling
-    "Agile / Scrum",        // iterative delivery, continuous value
-  ],
-
-  strengths   : [
-    "System design & scalable architecture",
-    "Technical leadership & code review",
-    "Cross-functional team collaboration",
-    "Developer experience & best practices",
-    "Mentorship & knowledge transfer",
-  ],
-
-  building    : "high-performance APIs and pixel-perfect interfaces ⚡",
-
-  openTo      : ["Full-time", "Freelance", "Open Source", "Tech Consulting"],
-
-};
-
-// ─────────────────────────────────────────────────────────────────────────────
-//  EXPORT
-// ─────────────────────────────────────────────────────────────────────────────
-
-export default luizFelipe;
-```
+</div>
 
 ---
 
@@ -214,4 +109,4 @@ export default luizFelipe;
 
 </div>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:00ff8822,50:0a3d2e,80:0a1628,100:0d1117&height=160&section=footer"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:00ff8820,50:081c14,80:0a1628,100:0d1117&height=160&section=footer"/>
