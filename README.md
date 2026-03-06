@@ -2,56 +2,69 @@
 
 ![header](https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,35:0f1d31,65:1a1038,100:0d1117&height=240&section=header&text=Luiz%20Felipe&fontSize=72&fontColor=e6edf3&fontAlignY=40&fontStyle=bold&desc=Senior%20Software%20Engineer%20%E2%80%A2%20Full%20Stack%20Developer&descSize=19&descFontColor=9da7b3&descAlignY=62&animation=fadeIn)
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=15&duration=3200&pause=900&color=58A6FF&center=true&vCenter=true&width=780&lines=_%3E+TypeScript+%E2%80%A2+React+%E2%80%A2+Node.js+%E2%80%A2+Python+%E2%80%A2+Docker+%E2%80%A2+AWS;_%3E+Clean+Architecture+%E2%80%A2+TDD+%E2%80%A2+Microservices+%E2%80%A2+CI%2FCD;_%3E+Open+to+Full-time+%E2%80%A2+Freelance+%E2%80%A2+Remote)](https://git.io/typing-svg)
-
 <br/>
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=16&duration=3200&pause=900&color=58A6FF&center=true&vCenter=true&width=780&lines=_%3E+Building+scalable%2C+maintainable+and+high-performance+software;_%3E+TypeScript+%E2%80%A2+React+%E2%80%A2+Node.js+%E2%80%A2+Python+%E2%80%A2+Docker+%E2%80%A2+AWS;_%3E+Clean+Architecture+%E2%80%A2+TDD+%E2%80%A2+Microservices+%E2%80%A2+CI%2FCD;_%3E+Open+to+Full-time+%E2%80%A2+Freelance+%E2%80%A2+Remote+Opportunities)](https://git.io/typing-svg)
+
+<br/><br/>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/luizfelippetech/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/luizFelippedev)
 [![Profile Views](https://komarev.com/ghpvc/?username=luizFelippedev&style=for-the-badge&color=58a6ff&label=PROFILE+VIEWS&labelColor=0d1117)](https://github.com/luizFelippedev)
-[![Open To Work](https://img.shields.io/badge/OPEN%20TO%20WORK-2ea44f?style=for-the-badge&logoColor=white)](https://www.linkedin.com/in/luizfelippetech/)
+[![Open To Work](https://img.shields.io/badge/OPEN%20TO%20WORK-58a6ff?style=for-the-badge&logo=codecrafters&logoColor=white&labelColor=0d1117)](https://github.com/luizFelippedev)
 
 </div>
 
 ---
 
-### Hey, I'm Luiz 👋
+## 👤 Professional Overview
 
-Full stack dev based in Brazil. I've been writing software professionally for a few years now, mostly across the JavaScript/TypeScript ecosystem — React on the front, Node on the back, with a healthy dose of Python when the situation calls for it.
+<div align="center">
+  <img src="./about.svg" width="100%" alt="About Luiz Felipe"/>
+</div>
 
-I care a lot about code that's actually readable and systems that don't fall apart at scale. Not because I read it in a book, but because I've debugged enough 2am production fires to know what bad architecture feels like.
+<br/>
 
-These days I'm mostly working with:
-- **Frontend:** React, Next.js, Tailwind — building interfaces that feel fast and don't fight the user
-- **Backend:** Node.js, NestJS, FastAPI — REST and GraphQL APIs, event-driven services
-- **Infra:** Docker, AWS, GitHub Actions — getting things deployed and keeping them running
-- **Data:** PostgreSQL, MongoDB, Redis — picking the right tool for the job
+Software Engineer focused on building modern, scalable and maintainable solutions across the full stack.  
+I work with a strong engineering mindset, emphasizing clean architecture, performance, developer experience, and real-world product value.
 
-I'm open to remote opportunities — full-time, contract or freelance.
+My work spans frontend architecture, backend services, APIs, cloud integrations, automation workflows, and production-ready applications designed for growth.
 
 ---
 
-### Stack
+## 🛠️ Core Technology Stack
 
 <div align="center">
 
+### Languages
 [![Skills](https://skillicons.dev/icons?i=ts,js,python,java,go,cs,php,ruby,kotlin,rust&theme=dark&perline=10)](https://skillicons.dev)
+
+### Frontend
 [![Skills](https://skillicons.dev/icons?i=react,nextjs,redux,tailwind,html,css,sass,vite,figma,storybook&theme=dark&perline=10)](https://skillicons.dev)
+
+### Backend
 [![Skills](https://skillicons.dev/icons?i=nodejs,express,nestjs,fastapi,django,spring,rails,graphql,nginx,prisma&theme=dark&perline=10)](https://skillicons.dev)
-[![Skills](https://skillicons.dev/icons?i=postgres,mongodb,mysql,redis,sqlite,firebase,supabase,elasticsearch&theme=dark&perline=10)](https://skillicons.dev)
+
+### Databases & Storage
+[![Skills](https://skillicons.dev/icons?i=postgres,mongodb,mysql,redis,sqlite,firebase,supabase,elasticsearch&theme=dark&perline=8)](https://skillicons.dev)
+
+### DevOps · Cloud · Infrastructure
 [![Skills](https://skillicons.dev/icons?i=docker,kubernetes,aws,gcp,githubactions,jenkins,terraform,linux,git,vercel&theme=dark&perline=10)](https://skillicons.dev)
 
+### Testing & Engineering Tools
+[![Skills](https://skillicons.dev/icons?i=jest,vitest,cypress,postman,vscode,github,gitlab,webpack,babel,figma&theme=dark&perline=10)](https://skillicons.dev)
+
 </div>
 
 ---
 
-### GitHub Stats
+## 📊 GitHub Analytics
 
 <div align="center">
 
-<img height="195" src="https://github-readme-stats.vercel.app/api?username=luizFelippedev&show_icons=true&theme=github_dark&bg_color=0d1117&border_color=21262d&title_color=58a6ff&icon_color=a371f7&text_color=8b949e&border_radius=10&include_all_commits=true&count_private=true&show=reviews,prs_merged,prs_merged_percentage&rank_icon=percentile&custom_title=Statistics"/>
+<img height="190" src="https://github-readme-stats.vercel.app/api?username=luizFelippedev&show_icons=true&theme=github_dark&bg_color=0d1117&border_color=21262d&title_color=58a6ff&icon_color=a371f7&text_color=8b949e&border_radius=10&include_all_commits=true&count_private=true&custom_title=GitHub%20Statistics"/>
 &nbsp;
-<img height="195" src="https://github-readme-stats.vercel.app/api/top-langs/?username=luizFelippedev&layout=compact&theme=github_dark&bg_color=0d1117&border_color=21262d&title_color=58a6ff&text_color=8b949e&border_radius=10&langs_count=8&custom_title=Languages"/>
+<img height="190" src="https://github-readme-stats.vercel.app/api/top-langs/?username=luizFelippedev&layout=compact&theme=github_dark&bg_color=0d1117&border_color=21262d&title_color=58a6ff&text_color=8b949e&border_radius=10&langs_count=8&custom_title=Most%20Used%20Languages"/>
 
 <br/><br/>
 
@@ -59,71 +72,13 @@ I'm open to remote opportunities — full-time, contract or freelance.
 
 <br/><br/>
 
-<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=luizFelippedev&theme=github-compact&bg_color=0d1117&color=58a6ff&line=a371f7&point=58a6ff&area=true&area_color=58a6ff12&border_color=21262d&custom_title=Contribution+Activity"/>
-
-<br/><br/>
-
-<img height="215" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=luizFelippedev&theme=github_dark"/>
-&nbsp;
-<img height="215" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=luizFelippedev&theme=github_dark"/>
-
-<br/><br/>
-
-<img height="215" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=luizFelippedev&theme=github_dark"/>
-&nbsp;
-<img height="215" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=luizFelippedev&theme=github_dark&utcOffset=-3"/>
-
-<br/><br/>
-
-<img width="98%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=luizFelippedev&theme=github_dark"/>
-
-<br/><br/>
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/luizFelippedev/luizFelippedev/output/github-snake-dark.svg"/>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/luizFelippedev/luizFelippedev/output/github-snake.svg"/>
-  <img alt="contribution graph" src="https://raw.githubusercontent.com/luizFelippedev/luizFelippedev/output/github-snake-dark.svg"/>
-</picture>
+<img width="98%" src="https://github-readme-activity-graph.vercel.app/graph?username=luizFelippedev&theme=github-compact&bg_color=0d1117&color=58a6ff&line=a371f7&point=58a6ff&area=true&area_color=58a6ff12&border_color=21262d&custom_title=Contribution%20Activity"/>
 
 </div>
 
-<details>
-<summary>Snake workflow setup</summary>
-
-```yaml
-# .github/workflows/snake.yml
-name: Generate Snake
-on:
-  schedule:
-    - cron: "0 */12 * * *"
-  workflow_dispatch:
-  push:
-    branches: [main]
-jobs:
-  generate:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: Platane/snk/svg-only@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - uses: crazy-max/ghaction-github-pages@v3
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-```
-
-</details>
-
 ---
 
-### Trophies
+## 🏆 Achievements
 
 <div align="center">
 
@@ -133,7 +88,7 @@ jobs:
 
 ---
 
-### Some things I've built
+## 🚀 Featured Projects
 
 <div align="center">
 
@@ -145,14 +100,28 @@ jobs:
 
 ---
 
-### Get in touch
+## 💡 Engineering Focus
 
-Best way to reach me is LinkedIn or email. I usually respond within a day.
+<div align="center">
+
+Clean Architecture • Scalable Systems • API Design • Performance • Cloud Integration • Developer Experience • Automation • Full Stack Delivery
+
+</div>
+
+---
+
+## 🤝 Let’s Connect
 
 <div align="center">
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Luiz%20Felipe-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/luizfelippetech/)
-[![Email](https://img.shields.io/badge/Email-luizfelippe%40dev.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:luizfelippe@dev.com)
+[![GitHub](https://img.shields.io/badge/GitHub-luizFelippedev-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/luizFelippedev)
+[![Email](https://img.shields.io/badge/Email-Contact%20Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:luizfelippe@dev.com)
+
+<br/><br/>
+
+*“Good programmers write code that humans can understand.”*  
+**— Martin Fowler**
 
 </div>
 
