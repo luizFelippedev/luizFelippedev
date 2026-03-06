@@ -1,115 +1,155 @@
-<svg width="900" height="340" viewBox="0 0 900 340" xmlns="http://www.w3.org/2000/svg">
-<style>
-  .title  { font-family: Segoe UI, Roboto, Ubuntu, sans-serif; font-size: 40px; font-weight: 700; fill: #e6edf3; }
-  .role   { font-family: Segoe UI, Roboto, Ubuntu, sans-serif; font-size: 17px; fill: #9da7b3; letter-spacing: 0.5px; }
-  .label  { font-family: 'Courier New', monospace; font-size: 10px; fill: #58a6ff; letter-spacing: 3px; }
-  .body   { font-family: Segoe UI, Roboto, Ubuntu, sans-serif; font-size: 13.5px; fill: #c9d1d9; }
-  .dim    { font-family: Segoe UI, Roboto, Ubuntu, sans-serif; font-size: 13.5px; fill: #8b949e; }
-  .stack  { font-family: 'Courier New', monospace; font-size: 12px; fill: #8b949e; letter-spacing: 1px; }
-  .stat-n { font-family: Segoe UI, Roboto, Ubuntu, sans-serif; font-size: 26px; font-weight: 700; }
-  .stat-l { font-family: 'Courier New', monospace; font-size: 9px; fill: #8b949e; letter-spacing: 2px; }
-  .glow   { filter: drop-shadow(0 0 10px #58a6ff88); }
-</style>
-<defs>
-  <!-- Animated border gradient -->
-  <linearGradient id="border" x1="0%" y1="0%" x2="100%" y2="0%">
-    <stop offset="0%"   stop-color="#58a6ff"><animate attributeName="stop-color" values="#58a6ff;#a371f7;#58a6ff" dur="4s" repeatCount="indefinite"/></stop>
-    <stop offset="50%"  stop-color="#a371f7"><animate attributeName="stop-color" values="#a371f7;#58a6ff;#a371f7" dur="4s" repeatCount="indefinite"/></stop>
-    <stop offset="100%" stop-color="#58a6ff"><animate attributeName="stop-color" values="#58a6ff;#a371f7;#58a6ff" dur="4s" repeatCount="indefinite"/></stop>
-  </linearGradient>
-  <!-- Line gradient -->
-  <linearGradient id="line" x1="0%" y1="0%" x2="100%" y2="0%">
-    <stop offset="0%"   stop-color="#58a6ff"/>
-    <stop offset="50%"  stop-color="#a371f7"/>
-    <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
-  </linearGradient>
-  <!-- Stat line -->
-  <linearGradient id="statLine" x1="0%" y1="0%" x2="0%" y2="100%">
-    <stop offset="0%"   stop-color="#58a6ff" stop-opacity="0"/>
-    <stop offset="50%"  stop-color="#58a6ff" stop-opacity="0.4"/>
-    <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
-  </linearGradient>
-</defs>
+<svg width="900" height="390" viewBox="0 0 900 390" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Luiz Felipe - Senior Software Engineer">
+  <style>
+    .title  { font-family: Segoe UI, Roboto, Ubuntu, sans-serif; font-size: 40px; font-weight: 700; fill: #e6edf3; }
+    .role   { font-family: Segoe UI, Roboto, Ubuntu, sans-serif; font-size: 15.5px; fill: #9da7b3; letter-spacing: 0.3px; }
+    .label  { font-family: 'Courier New', monospace; font-size: 9.5px; fill: #58a6ff; letter-spacing: 3px; }
+    .body   { font-family: Segoe UI, Roboto, Ubuntu, sans-serif; font-size: 12.5px; fill: #c9d1d9; }
+    .dim    { font-family: Segoe UI, Roboto, Ubuntu, sans-serif; font-size: 12.5px; fill: #8b949e; }
+    .stack  { font-family: 'Courier New', monospace; font-size: 11px; fill: #8b949e; letter-spacing: 0.6px; }
+    .stat-n { font-family: Segoe UI, Roboto, Ubuntu, sans-serif; font-size: 28px; font-weight: 700; }
+    .stat-l { font-family: 'Courier New', monospace; font-size: 8.5px; fill: #8b949e; letter-spacing: 2px; }
+    .glow   { filter: drop-shadow(0 0 12px #58a6ff99); }
+  </style>
 
-<!-- Background -->
-<rect width="900" height="340" rx="18" fill="#0d1117"/>
+  <defs>
+    <linearGradient id="border" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#58a6ff">
+        <animate attributeName="stop-color" values="#58a6ff;#a371f7;#58a6ff" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#a371f7">
+        <animate attributeName="stop-color" values="#a371f7;#58a6ff;#a371f7" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#58a6ff">
+        <animate attributeName="stop-color" values="#58a6ff;#a371f7;#58a6ff" dur="4s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
 
-<!-- Subtle inner glow top-left -->
-<ellipse cx="120" cy="80" rx="180" ry="100" fill="#58a6ff" opacity="0.03"/>
-<!-- Subtle inner glow bottom-right -->
-<ellipse cx="800" cy="280" rx="160" ry="100" fill="#a371f7" opacity="0.04"/>
+    <linearGradient id="line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#58a6ff"/>
+      <stop offset="50%" stop-color="#a371f7"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+    </linearGradient>
 
-<!-- Border animated -->
-<rect x="1.5" y="1.5" width="897" height="337" rx="18" stroke="url(#border)" stroke-width="1.5" fill="transparent">
-  <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/>
-</rect>
+    <linearGradient id="statDiv" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#58a6ff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+    </linearGradient>
 
-<!-- ── NAME + ROLE ── -->
-<text x="60" y="76" class="title glow">Luiz Felipe</text>
-<text x="62" y="100" class="role">Senior Software Engineer  ·  Full Stack Developer  ·  Brazil 🇧🇷</text>
+    <linearGradient id="openGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#a371f7" stop-opacity="0.15"/>
+    </linearGradient>
 
-<!-- Divider -->
-<rect x="60" y="116" width="780" height="1.5" fill="url(#line)"/>
+    <linearGradient id="openBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#a371f7" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
 
-<!-- ── ABOUT BLOCK ── -->
-<text x="60" y="140" class="label">ABOUT</text>
-<text x="60" y="160" class="body">Senior Software Engineer with 5+ years of experience designing and shipping</text>
-<text x="60" y="178" class="body">scalable, maintainable systems across the full stack. Deeply committed to</text>
-<text x="60" y="196" class="dim">clean architecture, great developer experience and building software that</text>
-<text x="60" y="214" class="dim">genuinely solves real-world problems with precision and craftsmanship.</text>
+  <!-- Base -->
+  <rect width="900" height="390" rx="18" fill="#0d1117"/>
 
-<!-- Divider 2 -->
-<rect x="60" y="228" width="780" height="1" fill="url(#line)" opacity="0.4"/>
+  <!-- Ambient glows -->
+  <ellipse cx="110" cy="90" rx="200" ry="120" fill="#58a6ff" opacity="0.025"/>
+  <ellipse cx="820" cy="320" rx="170" ry="110" fill="#a371f7" opacity="0.03"/>
 
-<!-- ── STACK LINE ── -->
-<text x="60" y="250" class="label">STACK</text>
-<text x="60" y="269" class="stack">TypeScript  ·  JavaScript  ·  Python  ·  Java  ·  Go  ·  React  ·  Node.js  ·  NestJS  ·  Docker  ·  AWS  ·  PostgreSQL  ·  Redis</text>
+  <!-- Border animated -->
+  <rect x="1.5" y="1.5" width="897" height="387" rx="18" stroke="url(#border)" stroke-width="1.5" fill="none">
+    <animate attributeName="opacity" values="0.65;1;0.65" dur="3.5s" repeatCount="indefinite"/>
+  </rect>
 
-<!-- Divider 3 -->
-<rect x="60" y="283" width="780" height="1" fill="url(#line)" opacity="0.4"/>
+  <!-- Decorative dots -->
+  <circle cx="840" cy="44" r="6" fill="#58a6ff">
+    <animate attributeName="opacity" values="1;0.2;1" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="864" cy="66" r="4" fill="#a371f7">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="828" cy="86" r="3" fill="#58a6ff">
+    <animate attributeName="opacity" values="1;0.3;1" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="852" cy="100" r="2.5" fill="#a371f7">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
 
-<!-- ── PRACTICES LINE ── -->
-<text x="60" y="303" class="label">PRACTICES</text>
-<text x="60" y="322" class="stack">Clean Architecture  ·  SOLID  ·  TDD  ·  DDD  ·  Microservices  ·  CI/CD  ·  Code Review  ·  Agile</text>
+  <!-- Header -->
+  <text x="54" y="72" class="title glow">Luiz Felipe</text>
+  <text x="56" y="96" class="role">Senior Software Engineer · Full Stack Developer · Brazil 🇧🇷</text>
 
-<!-- ── STAT NUMBERS top-right ── -->
-<!-- Divider vert -->
-<rect x="684" y="130" width="1" height="145" fill="url(#statLine)"/>
-<rect x="762" y="130" width="1" height="145" fill="url(#statLine)"/>
+  <!-- Main divider -->
+  <rect x="54" y="112" width="790" height="1.5" fill="url(#line)"/>
 
-<text x="722" y="178" text-anchor="middle" class="stat-n" fill="#58a6ff" style="filter:drop-shadow(0 0 8px #58a6ff66)">5+</text>
-<text x="722" y="196" text-anchor="middle" class="stat-l">YRS EXP</text>
+  <!-- Left content -->
+  <text x="54" y="134" class="label">ABOUT</text>
+  <text x="54" y="153" class="body">Senior Software Engineer with 5+ years of experience designing and</text>
+  <text x="54" y="170" class="body">shipping scalable, maintainable systems across the full stack.</text>
+  <text x="54" y="187" class="dim">Deeply committed to clean architecture, great developer experience,</text>
+  <text x="54" y="204" class="dim">and building software that solves real-world problems with precision.</text>
 
-<text x="800" y="178" text-anchor="middle" class="stat-n" fill="#a371f7" style="filter:drop-shadow(0 0 8px #a371f766)">30+</text>
-<text x="800" y="196" text-anchor="middle" class="stat-l">PROJECTS</text>
+  <rect x="54" y="218" width="560" height="1" fill="url(#line)" opacity="0.35"/>
 
-<text x="722" y="238" text-anchor="middle" class="stat-n" fill="#58a6ff" style="filter:drop-shadow(0 0 8px #58a6ff66)">10+</text>
-<text x="722" y="256" text-anchor="middle" class="stat-l">LANGUAGES</text>
+  <!-- Stack fixed in 2 lines -->
+  <text x="54" y="237" class="label">STACK</text>
+  <text x="54" y="255" class="stack">TypeScript · JavaScript · Python · Java · Go · React · Node.js</text>
+  <text x="54" y="272" class="stack">NestJS · Docker · AWS</text>
 
-<text x="800" y="238" text-anchor="middle" class="stat-n" fill="#a371f7" style="filter:drop-shadow(0 0 8px #a371f766)">∞</text>
-<text x="800" y="256" text-anchor="middle" class="stat-l">PASSION</text>
+  <rect x="54" y="286" width="560" height="1" fill="url(#line)" opacity="0.35"/>
 
-<!-- ── DECORATIVE DOTS ── -->
-<circle cx="835" cy="48" r="6" fill="#58a6ff">
-  <animate attributeName="opacity" values="1;0.2;1" dur="3s" repeatCount="indefinite"/>
-</circle>
-<circle cx="858" cy="72" r="4" fill="#a371f7">
-  <animate attributeName="opacity" values="0.2;1;0.2" dur="3s" repeatCount="indefinite"/>
-</circle>
-<circle cx="824" cy="92" r="3" fill="#58a6ff">
-  <animate attributeName="opacity" values="1;0.3;1" dur="4s" repeatCount="indefinite"/>
-</circle>
-<circle cx="848" cy="108" r="2.5" fill="#a371f7">
-  <animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite"/>
-</circle>
+  <!-- Practices -->
+  <text x="54" y="305" class="label">ENGINEERING PRACTICES</text>
+  <text x="54" y="323" class="stack">Clean Architecture · SOLID · TDD · DDD · Microservices · CI/CD · Agile</text>
 
-<!-- STATUS pill -->
-<rect x="60" y="304" width="0" height="0" rx="0"/>
-<!-- open-to chip bottom left aligned with last line -->
-<rect x="592" y="311" width="136" height="20" rx="10" fill="rgba(88,166,255,0.08)" stroke="rgba(88,166,255,0.3)" stroke-width="1"/>
-<circle cx="607" cy="321" r="4" fill="#58a6ff">
-  <animate attributeName="opacity" values="1;0.15;1" dur="1.6s" repeatCount="indefinite"/>
-</circle>
-<text x="672" y="325" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" fill="#58a6ff" letter-spacing="1">OPEN TO WORK</text>
+  <rect x="54" y="337" width="560" height="1" fill="url(#line)" opacity="0.35"/>
 
+  <!-- Open to work -->
+  <rect x="54" y="348" width="200" height="28" rx="14" fill="url(#openGrad)" stroke="url(#openBorder)" stroke-width="1.2"/>
+  <circle cx="72" cy="362" r="5" fill="#58a6ff">
+    <animate attributeName="opacity" values="1;0.1;1" dur="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="5;3.5;5" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <text x="86" y="366" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#e6edf3" letter-spacing="1.5">OPEN TO WORK</text>
+
+  <text x="270" y="364" font-family="'Courier New', monospace" font-size="10" fill="#8b949e">github.com/<tspan fill="#58a6ff">luizFelippedev</tspan></text>
+
+  <!-- Right divider -->
+  <rect x="636" y="126" width="1" height="220" fill="url(#statDiv)"/>
+
+  <!-- Stat 1 -->
+  <rect x="648" y="130" width="100" height="62" rx="8" fill="rgba(88,166,255,0.05)" stroke="rgba(88,166,255,0.14)" stroke-width="1">
+    <animate attributeName="stroke-opacity" values="0.14;0.35;0.14" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  <text x="698" y="164" text-anchor="middle" class="stat-n" fill="#58a6ff" style="filter: drop-shadow(0 0 8px #58a6ff66);">5+</text>
+  <text x="698" y="181" text-anchor="middle" class="stat-l">YRS EXP</text>
+
+  <!-- Stat 2 -->
+  <rect x="758" y="130" width="100" height="62" rx="8" fill="rgba(163,113,247,0.05)" stroke="rgba(163,113,247,0.14)" stroke-width="1">
+    <animate attributeName="stroke-opacity" values="0.14;0.35;0.14" dur="3.4s" begin="0.5s" repeatCount="indefinite"/>
+  </rect>
+  <text x="808" y="164" text-anchor="middle" class="stat-n" fill="#a371f7" style="filter: drop-shadow(0 0 8px #a371f766);">30+</text>
+  <text x="808" y="181" text-anchor="middle" class="stat-l">PROJECTS</text>
+
+  <!-- Stat 3 -->
+  <rect x="648" y="204" width="100" height="62" rx="8" fill="rgba(88,166,255,0.05)" stroke="rgba(88,166,255,0.14)" stroke-width="1">
+    <animate attributeName="stroke-opacity" values="0.14;0.35;0.14" dur="2.9s" begin="0.3s" repeatCount="indefinite"/>
+  </rect>
+  <text x="698" y="238" text-anchor="middle" class="stat-n" fill="#58a6ff" style="filter: drop-shadow(0 0 8px #58a6ff66);">10+</text>
+  <text x="698" y="255" text-anchor="middle" class="stat-l">LANGUAGES</text>
+
+  <!-- Stat 4 -->
+  <rect x="758" y="204" width="100" height="62" rx="8" fill="rgba(163,113,247,0.05)" stroke="rgba(163,113,247,0.14)" stroke-width="1">
+    <animate attributeName="stroke-opacity" values="0.14;0.35;0.14" dur="3.8s" begin="0.8s" repeatCount="indefinite"/>
+  </rect>
+  <text x="808" y="238" text-anchor="middle" class="stat-n" fill="#a371f7" style="filter: drop-shadow(0 0 8px #a371f766);">∞</text>
+  <text x="808" y="255" text-anchor="middle" class="stat-l">PASSION</text>
+
+  <!-- Right badge -->
+  <rect x="648" y="278" width="210" height="28" rx="14" fill="url(#openGrad)" stroke="url(#openBorder)" stroke-width="1.2"/>
+  <circle cx="666" cy="292" r="5" fill="#58a6ff">
+    <animate attributeName="opacity" values="1;0.1;1" dur="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="5;3.5;5" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <text x="680" y="296" font-family="'Courier New', monospace" font-size="10" font-weight="700" fill="#e6edf3" letter-spacing="1.5">OPEN TO WORK</text>
+
+  <text x="753" y="337" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" fill="#8b949e">Since <tspan fill="#58a6ff">2019</tspan> · Remote 🌐</text>
 </svg>
