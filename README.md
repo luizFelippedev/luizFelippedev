@@ -76,8 +76,15 @@ My work spans frontend architecture, backend services, APIs, cloud integrations,
 
 ### ⚡ GitHub Stats
 
-<img width="49%" src="https://github-readme-stats.vercel.app/api?username=luizFelippedev&show_icons=true&theme=github_dark&bg_color=0d1117&border_color=21262d&title_color=58a6ff&icon_color=a371f7&text_color=8b949e&border_radius=10&include_all_commits=true&count_private=true&custom_title=GitHub%20Statistics&rank_icon=github&cache_seconds=1800" />
-<img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=luizFelippedev&layout=compact&theme=github_dark&bg_color=0d1117&border_color=21262d&title_color=58a6ff&text_color=8b949e&border_radius=10&langs_count=8&custom_title=Most%20Used%20Languages&cache_seconds=1800" />
+<img width="49%" src="https://luizfelippedev.vercel.app/api?username=luizFelippedev&show_icons=true&theme=github_dark&bg_color=0d1117&border_color=21262d&title_color=58a6ff&icon_color=a371f7&text_color=8b949e&border_radius=10&include_all_commits=true&count_private=true&custom_title=GitHub%20Statistics&rank_icon=github" />
+<img width="49%" src="https://luizfelippedev.vercel.app/api/top-langs/?username=luizFelippedev&layout=compact&theme=github_dark&bg_color=0d1117&border_color=21262d&title_color=58a6ff&text_color=8b949e&border_radius=10&langs_count=8&custom_title=Most%20Used%20Languages" />
+
+<br/><br/>
+
+### 🚀 Pinned Repositories
+
+<img width="49%" src="https://luizfelippedev.vercel.app/api/pin/?username=luizFelippedev&repo=2Document&theme=github_dark&bg_color=0d1117&border_color=21262d&title_color=58a6ff&text_color=8b949e&icon_color=a371f7&border_radius=10" />
+<img width="49%" src="https://luizfelippedev.vercel.app/api/pin/?username=luizFelippedev&repo=bc-api&theme=github_dark&bg_color=0d1117&border_color=21262d&title_color=58a6ff&text_color=8b949e&icon_color=a371f7&border_radius=10" />
 
 <br/><br/>
 
@@ -94,18 +101,6 @@ My work spans frontend architecture, backend services, APIs, cloud integrations,
 ![last-update](https://img.shields.io/github/last-commit/luizFelippedev/luizFelippedev?style=flat-square&color=58a6ff&label=Last%20Updated&labelColor=0d1117&logo=github)
 &nbsp;
 ![visitors](https://komarev.com/ghpvc/?username=luizFelippedev&style=flat-square&color=58a6ff&label=Total+Visitors&labelColor=0d1117)
-
-</div>
-
----
-
-## 🚀 Featured Projects
-
-<div align="center">
-
-[![Repo1](https://github-readme-stats.vercel.app/api/pin/?username=luizFelippedev&repo=2Document&theme=github_dark&bg_color=0d1117&border_color=21262d&title_color=58a6ff&text_color=8b949e&icon_color=a371f7&border_radius=10&cache_seconds=1800)](https://github.com/luizFelippedev/2Document)
-&nbsp;
-[![Repo2](https://github-readme-stats.vercel.app/api/pin/?username=luizFelippedev&repo=bc-api&theme=github_dark&bg_color=0d1117&border_color=21262d&title_color=58a6ff&text_color=8b949e&icon_color=a371f7&border_radius=10&cache_seconds=1800)](https://github.com/luizFelippedev/bc-api)
 
 </div>
 
