@@ -1,488 +1,115 @@
-<svg width="900" height="520" viewBox="0 0 900 520" xmlns="http://www.w3.org/2000/svg">
+<svg width="900" height="340" viewBox="0 0 900 340" xmlns="http://www.w3.org/2000/svg">
+<style>
+  .title  { font-family: Segoe UI, Roboto, Ubuntu, sans-serif; font-size: 40px; font-weight: 700; fill: #e6edf3; }
+  .role   { font-family: Segoe UI, Roboto, Ubuntu, sans-serif; font-size: 17px; fill: #9da7b3; letter-spacing: 0.5px; }
+  .label  { font-family: 'Courier New', monospace; font-size: 10px; fill: #58a6ff; letter-spacing: 3px; }
+  .body   { font-family: Segoe UI, Roboto, Ubuntu, sans-serif; font-size: 13.5px; fill: #c9d1d9; }
+  .dim    { font-family: Segoe UI, Roboto, Ubuntu, sans-serif; font-size: 13.5px; fill: #8b949e; }
+  .stack  { font-family: 'Courier New', monospace; font-size: 12px; fill: #8b949e; letter-spacing: 1px; }
+  .stat-n { font-family: Segoe UI, Roboto, Ubuntu, sans-serif; font-size: 26px; font-weight: 700; }
+  .stat-l { font-family: 'Courier New', monospace; font-size: 9px; fill: #8b949e; letter-spacing: 2px; }
+  .glow   { filter: drop-shadow(0 0 10px #58a6ff88); }
+</style>
 <defs>
-  <!-- BG -->
-  <radialGradient id="bg1" cx="20%" cy="25%" r="55%">
-    <stop offset="0%" stop-color="#0d2137"/>
-    <stop offset="100%" stop-color="#0d1117"/>
-  </radialGradient>
-  <radialGradient id="bg2" cx="80%" cy="75%" r="50%">
-    <stop offset="0%" stop-color="#0a2a1f"/>
-    <stop offset="100%" stop-color="#0d1117" stop-opacity="0"/>
-  </radialGradient>
-
-  <!-- Glows -->
-  <filter id="glow2">
-    <feGaussianBlur stdDeviation="3" result="b"/>
-    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-  </filter>
-  <filter id="glow6">
-    <feGaussianBlur stdDeviation="6" result="b"/>
-    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-  </filter>
-  <filter id="glow12">
-    <feGaussianBlur stdDeviation="12" result="b"/>
-    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-  </filter>
-  <filter id="blur3">
-    <feGaussianBlur stdDeviation="3"/>
-  </filter>
-  <filter id="blur8">
-    <feGaussianBlur stdDeviation="8"/>
-  </filter>
-
-  <!-- Border gradient animated -->
-  <linearGradient id="bord" x1="0%" y1="0%" x2="100%" y2="100%">
-    <stop offset="0%" stop-color="#00ffaa">
-      <animate attributeName="stop-color" values="#00ffaa;#58a6ff;#00ffaa" dur="4s" repeatCount="indefinite"/>
-    </stop>
-    <stop offset="50%" stop-color="#58a6ff">
-      <animate attributeName="stop-color" values="#58a6ff;#00ffaa;#58a6ff" dur="4s" repeatCount="indefinite"/>
-    </stop>
-    <stop offset="100%" stop-color="#00ffaa">
-      <animate attributeName="stop-color" values="#00ffaa;#58a6ff;#00ffaa" dur="4s" repeatCount="indefinite"/>
-    </stop>
+  <!-- Animated border gradient -->
+  <linearGradient id="border" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%"   stop-color="#58a6ff"><animate attributeName="stop-color" values="#58a6ff;#a371f7;#58a6ff" dur="4s" repeatCount="indefinite"/></stop>
+    <stop offset="50%"  stop-color="#a371f7"><animate attributeName="stop-color" values="#a371f7;#58a6ff;#a371f7" dur="4s" repeatCount="indefinite"/></stop>
+    <stop offset="100%" stop-color="#58a6ff"><animate attributeName="stop-color" values="#58a6ff;#a371f7;#58a6ff" dur="4s" repeatCount="indefinite"/></stop>
   </linearGradient>
-
-  <!-- Grid -->
-  <pattern id="grid" x="0" y="0" width="44" height="44" patternUnits="userSpaceOnUse">
-    <path d="M44 0L0 0 0 44" fill="none" stroke="rgba(0,255,170,0.04)" stroke-width="0.5"/>
-  </pattern>
-
-  <!-- Clip -->
-  <clipPath id="card">
-    <rect x="2" y="2" width="896" height="516" rx="18"/>
-  </clipPath>
+  <!-- Line gradient -->
+  <linearGradient id="line" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%"   stop-color="#58a6ff"/>
+    <stop offset="50%"  stop-color="#a371f7"/>
+    <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+  </linearGradient>
+  <!-- Stat line -->
+  <linearGradient id="statLine" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%"   stop-color="#58a6ff" stop-opacity="0"/>
+    <stop offset="50%"  stop-color="#58a6ff" stop-opacity="0.4"/>
+    <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+  </linearGradient>
 </defs>
 
-<!-- ══ BACKGROUND ══ -->
-<rect width="900" height="520" fill="#0d1117"/>
-<rect width="900" height="520" fill="url(#bg1)" clip-path="url(#card)"/>
-<rect width="900" height="520" fill="url(#bg2)" clip-path="url(#card)"/>
-<rect width="900" height="520" fill="url(#grid)" clip-path="url(#card)"/>
+<!-- Background -->
+<rect width="900" height="340" rx="18" fill="#0d1117"/>
 
-<!-- ══ AMBIENT GLOW ORBS ══ -->
-<ellipse cx="160" cy="140" rx="220" ry="160" fill="#00ffaa" opacity="0.04" filter="url(#blur8)">
-  <animate attributeName="rx" values="220;260;220" dur="6s" repeatCount="indefinite"/>
-  <animate attributeName="opacity" values="0.04;0.07;0.04" dur="6s" repeatCount="indefinite"/>
-</ellipse>
-<ellipse cx="780" cy="390" rx="200" ry="160" fill="#58a6ff" opacity="0.05" filter="url(#blur8)">
-  <animate attributeName="rx" values="200;240;200" dur="8s" repeatCount="indefinite"/>
-  <animate attributeName="opacity" values="0.05;0.08;0.05" dur="8s" repeatCount="indefinite"/>
-</ellipse>
-<ellipse cx="750" cy="100" rx="150" ry="100" fill="#00ffaa" opacity="0.03" filter="url(#blur8)">
-  <animate attributeName="opacity" values="0.03;0.06;0.03" dur="5s" repeatCount="indefinite"/>
-</ellipse>
+<!-- Subtle inner glow top-left -->
+<ellipse cx="120" cy="80" rx="180" ry="100" fill="#58a6ff" opacity="0.03"/>
+<!-- Subtle inner glow bottom-right -->
+<ellipse cx="800" cy="280" rx="160" ry="100" fill="#a371f7" opacity="0.04"/>
 
-<!-- ══ PARTICLES ══ -->
-<g>
-  <circle cx="45" cy="60" r="1.8" fill="#00ffaa" opacity="0">
-    <animate attributeName="opacity" values="0;1;0" dur="3.4s" begin="0s" repeatCount="indefinite"/>
-    <animate attributeName="cy" values="60;35;60" dur="3.4s" repeatCount="indefinite"/>
-    <animate attributeName="cx" values="45;50;45" dur="3.4s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="120" cy="490" r="1.2" fill="#58a6ff" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0" dur="4.2s" begin="0.7s" repeatCount="indefinite"/>
-    <animate attributeName="cy" values="490;465;490" dur="4.2s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="210" cy="30" r="2.2" fill="#00ffaa" opacity="0">
-    <animate attributeName="opacity" values="0;1;0" dur="2.9s" begin="1.1s" repeatCount="indefinite"/>
-    <animate attributeName="cy" values="30;10;30" dur="2.9s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="300" cy="505" r="1.6" fill="#58a6ff" opacity="0">
-    <animate attributeName="opacity" values="0;0.8;0" dur="3.7s" begin="0.4s" repeatCount="indefinite"/>
-    <animate attributeName="cy" values="505;485;505" dur="3.7s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="440" cy="18" r="1.4" fill="#00ffaa" opacity="0">
-    <animate attributeName="opacity" values="0;1;0" dur="4.6s" begin="1.6s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="520" cy="508" r="2" fill="#58a6ff" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0" dur="3.1s" begin="0.9s" repeatCount="indefinite"/>
-    <animate attributeName="cy" values="508;488;508" dur="3.1s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="650" cy="22" r="1.6" fill="#00ffaa" opacity="0">
-    <animate attributeName="opacity" values="0;1;0" dur="5.2s" begin="0.3s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="760" cy="500" r="1.2" fill="#58a6ff" opacity="0">
-    <animate attributeName="opacity" values="0;0.8;0" dur="2.6s" begin="1.3s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="855" cy="45" r="2" fill="#00ffaa" opacity="0">
-    <animate attributeName="opacity" values="0;1;0" dur="4.0s" begin="0.6s" repeatCount="indefinite"/>
-    <animate attributeName="cy" values="45;22;45" dur="4.0s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="878" cy="430" r="1.5" fill="#58a6ff" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0" dur="4.4s" begin="1.0s" repeatCount="indefinite"/>
-  </circle>
-  <!-- Midfield -->
-  <circle cx="88" cy="260" r="1" fill="#00ffaa" opacity="0">
-    <animate attributeName="opacity" values="0;0.6;0" dur="6.1s" begin="2.0s" repeatCount="indefinite"/>
-    <animate attributeName="cy" values="260;240;260" dur="6.1s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="815" cy="200" r="1.4" fill="#58a6ff" opacity="0">
-    <animate attributeName="opacity" values="0;0.7;0" dur="5.8s" begin="1.9s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="830" cy="310" r="1" fill="#00ffaa" opacity="0">
-    <animate attributeName="opacity" values="0;0.8;0" dur="3.5s" begin="2.3s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="38" cy="380" r="1.8" fill="#58a6ff" opacity="0">
-    <animate attributeName="opacity" values="0;0.7;0" dur="4.9s" begin="0.8s" repeatCount="indefinite"/>
-    <animate attributeName="cy" values="380;355;380" dur="4.9s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="370" cy="510" r="1" fill="#00ffaa" opacity="0">
-    <animate attributeName="opacity" values="0;0.8;0" dur="3.8s" begin="1.4s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="690" cy="12" r="1.5" fill="#58a6ff" opacity="0">
-    <animate attributeName="opacity" values="0;0.9;0" dur="4.3s" begin="0.2s" repeatCount="indefinite"/>
-  </circle>
-</g>
+<!-- Border animated -->
+<rect x="1.5" y="1.5" width="897" height="337" rx="18" stroke="url(#border)" stroke-width="1.5" fill="transparent">
+  <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite"/>
+</rect>
 
-<!-- ══ CARD BORDER ══ -->
-<rect x="2" y="2" width="896" height="516" rx="18" fill="none" stroke="url(#bord)" stroke-width="1.5" opacity="0.8"/>
+<!-- ── NAME + ROLE ── -->
+<text x="60" y="76" class="title glow">Luiz Felipe</text>
+<text x="62" y="100" class="role">Senior Software Engineer  ·  Full Stack Developer  ·  Brazil 🇧🇷</text>
 
-<!-- ══ TOP CORNER ACCENTS ══ -->
-<path d="M2 50 L2 2 L50 2" fill="none" stroke="#00ffaa" stroke-width="2.5" opacity="0.8">
-  <animate attributeName="opacity" values="0.8;0.4;0.8" dur="2.5s" repeatCount="indefinite"/>
-</path>
-<path d="M850 2 L898 2 L898 50" fill="none" stroke="#00ffaa" stroke-width="2.5" opacity="0.8">
-  <animate attributeName="opacity" values="0.8;0.4;0.8" dur="2.5s" begin="1.25s" repeatCount="indefinite"/>
-</path>
-<path d="M2 470 L2 518 L50 518" fill="none" stroke="#58a6ff" stroke-width="2.5" opacity="0.7">
-  <animate attributeName="opacity" values="0.7;0.3;0.7" dur="3s" repeatCount="indefinite"/>
-</path>
-<path d="M850 518 L898 518 L898 470" fill="none" stroke="#58a6ff" stroke-width="2.5" opacity="0.7">
-  <animate attributeName="opacity" values="0.7;0.3;0.7" dur="3s" begin="1.5s" repeatCount="indefinite"/>
-</path>
+<!-- Divider -->
+<rect x="60" y="116" width="780" height="1.5" fill="url(#line)"/>
 
-<!-- ══ TOP LABEL ══ -->
-<text x="450" y="36" text-anchor="middle" font-family="'Courier New', monospace" font-size="10" fill="#00ffaa" letter-spacing="6" opacity="0.7">◆  SENIOR  SOFTWARE  ENGINEER  ◆</text>
+<!-- ── ABOUT BLOCK ── -->
+<text x="60" y="140" class="label">ABOUT</text>
+<text x="60" y="160" class="body">Senior Software Engineer with 5+ years of experience designing and shipping</text>
+<text x="60" y="178" class="body">scalable, maintainable systems across the full stack. Deeply committed to</text>
+<text x="60" y="196" class="dim">clean architecture, great developer experience and building software that</text>
+<text x="60" y="214" class="dim">genuinely solves real-world problems with precision and craftsmanship.</text>
 
-<!-- ══ DIVIDER VERTICAL ══ -->
-<line x1="248" y1="55" x2="248" y2="465" stroke="rgba(0,255,170,0.12)" stroke-width="1" stroke-dasharray="4,5"/>
+<!-- Divider 2 -->
+<rect x="60" y="228" width="780" height="1" fill="url(#line)" opacity="0.4"/>
 
-<!-- ══════════════════════════════
-     LEFT — AVATAR + STATUS
-════════════════════════════════ -->
+<!-- ── STACK LINE ── -->
+<text x="60" y="250" class="label">STACK</text>
+<text x="60" y="269" class="stack">TypeScript  ·  JavaScript  ·  Python  ·  Java  ·  Go  ·  React  ·  Node.js  ·  NestJS  ·  Docker  ·  AWS  ·  PostgreSQL  ·  Redis</text>
 
-<!-- Outer spin ring -->
-<g transform="translate(124,188)">
-  <circle r="88" fill="none" stroke="rgba(0,255,170,0.12)" stroke-width="1">
-    <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="24s" repeatCount="indefinite"/>
-  </circle>
-  <!-- Ticks on outer ring -->
-  <g opacity="0.4">
-    <line x1="0" y1="-88" x2="0" y2="-80" stroke="#00ffaa" stroke-width="1.5"/>
-    <line x1="88" y1="0" x2="80" y2="0" stroke="#00ffaa" stroke-width="1.5"/>
-    <line x1="0" y1="88" x2="0" y2="80" stroke="#00ffaa" stroke-width="1.5"/>
-    <line x1="-88" y1="0" x2="-80" y2="0" stroke="#00ffaa" stroke-width="1.5"/>
-    <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="24s" repeatCount="indefinite"/>
-  </g>
-</g>
+<!-- Divider 3 -->
+<rect x="60" y="283" width="780" height="1" fill="url(#line)" opacity="0.4"/>
 
-<!-- Mid spin ring -->
-<g transform="translate(124,188)">
-  <circle r="70" fill="none" stroke="rgba(88,166,255,0.18)" stroke-width="0.8" stroke-dasharray="6,8">
-    <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="16s" repeatCount="indefinite"/>
-  </circle>
-  <!-- Orbiting dot -->
-  <circle cx="0" cy="-70" r="5" fill="#58a6ff" filter="url(#glow6)">
-    <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="6s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="1;0.5;1" dur="3s" repeatCount="indefinite"/>
-  </circle>
-</g>
+<!-- ── PRACTICES LINE ── -->
+<text x="60" y="303" class="label">PRACTICES</text>
+<text x="60" y="322" class="stack">Clean Architecture  ·  SOLID  ·  TDD  ·  DDD  ·  Microservices  ·  CI/CD  ·  Code Review  ·  Agile</text>
 
-<!-- Inner spin ring -->
-<g transform="translate(124,188)">
-  <circle r="52" fill="none" stroke="rgba(0,255,170,0.1)" stroke-width="0.6" stroke-dasharray="3,6">
-    <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="10s" repeatCount="indefinite"/>
-  </circle>
-  <!-- Orbiting dot 2 -->
-  <circle cx="52" cy="0" r="3.5" fill="#00ffaa" filter="url(#glow2)">
-    <animateTransform attributeName="transform" type="rotate" from="180" to="540" dur="4s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite"/>
-  </circle>
-</g>
+<!-- ── STAT NUMBERS top-right ── -->
+<!-- Divider vert -->
+<rect x="684" y="130" width="1" height="145" fill="url(#statLine)"/>
+<rect x="762" y="130" width="1" height="145" fill="url(#statLine)"/>
 
-<!-- Avatar bg -->
-<circle cx="124" cy="188" r="42" fill="#0a1628" stroke="#00ffaa" stroke-width="1.8">
-  <animate attributeName="stroke-opacity" values="1;0.4;1" dur="3s" repeatCount="indefinite"/>
+<text x="722" y="178" text-anchor="middle" class="stat-n" fill="#58a6ff" style="filter:drop-shadow(0 0 8px #58a6ff66)">5+</text>
+<text x="722" y="196" text-anchor="middle" class="stat-l">YRS EXP</text>
+
+<text x="800" y="178" text-anchor="middle" class="stat-n" fill="#a371f7" style="filter:drop-shadow(0 0 8px #a371f766)">30+</text>
+<text x="800" y="196" text-anchor="middle" class="stat-l">PROJECTS</text>
+
+<text x="722" y="238" text-anchor="middle" class="stat-n" fill="#58a6ff" style="filter:drop-shadow(0 0 8px #58a6ff66)">10+</text>
+<text x="722" y="256" text-anchor="middle" class="stat-l">LANGUAGES</text>
+
+<text x="800" y="238" text-anchor="middle" class="stat-n" fill="#a371f7" style="filter:drop-shadow(0 0 8px #a371f766)">∞</text>
+<text x="800" y="256" text-anchor="middle" class="stat-l">PASSION</text>
+
+<!-- ── DECORATIVE DOTS ── -->
+<circle cx="835" cy="48" r="6" fill="#58a6ff">
+  <animate attributeName="opacity" values="1;0.2;1" dur="3s" repeatCount="indefinite"/>
 </circle>
-<!-- Avatar glow -->
-<circle cx="124" cy="188" r="42" fill="none" stroke="#00ffaa" stroke-width="8" opacity="0.06" filter="url(#blur3)"/>
-
-<!-- Avatar initials -->
-<text x="124" y="202" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="32" font-weight="900" fill="#00ffaa" filter="url(#glow6)">LF</text>
-
-<!-- Status badge -->
-<rect x="74" y="244" width="102" height="22" rx="11" fill="rgba(0,255,170,0.08)" stroke="#00ffaa" stroke-width="1"/>
-<circle cx="89" cy="255" r="4.5" fill="#00ffaa">
-  <animate attributeName="opacity" values="1;0.15;1" dur="1.4s" repeatCount="indefinite"/>
-  <animate attributeName="r" values="4.5;3;4.5" dur="1.4s" repeatCount="indefinite"/>
+<circle cx="858" cy="72" r="4" fill="#a371f7">
+  <animate attributeName="opacity" values="0.2;1;0.2" dur="3s" repeatCount="indefinite"/>
 </circle>
-<text x="152" y="259" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#00ffaa" letter-spacing="1.5">AVAILABLE</text>
+<circle cx="824" cy="92" r="3" fill="#58a6ff">
+  <animate attributeName="opacity" values="1;0.3;1" dur="4s" repeatCount="indefinite"/>
+</circle>
+<circle cx="848" cy="108" r="2.5" fill="#a371f7">
+  <animate attributeName="opacity" values="0.4;1;0.4" dur="2.5s" repeatCount="indefinite"/>
+</circle>
 
-<!-- Location badge -->
-<rect x="64" y="274" width="122" height="20" rx="10" fill="rgba(88,166,255,0.06)" stroke="rgba(88,166,255,0.3)" stroke-width="0.8"/>
-<text x="125" y="287" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" fill="#8b949e" letter-spacing="1">📍  Brazil · UTC-3 · Remote</text>
-
-<!-- ══════════════════════════════
-     RIGHT — MAIN CONTENT
-════════════════════════════════ -->
-
-<!-- Name + Role -->
-<text x="278" y="96" font-family="'Segoe UI', Arial, sans-serif" font-size="46" font-weight="900" fill="white" filter="url(#glow6)" letter-spacing="-1">Luiz Felipe</text>
-<text x="280" y="96" font-family="'Segoe UI', Arial, sans-serif" font-size="46" font-weight="900" fill="none" stroke="#00ffaa" stroke-width="0.4" letter-spacing="-1" opacity="0.25">Luiz Felipe</text>
-
-<text x="280" y="122" font-family="'Courier New', monospace" font-size="13" fill="#58a6ff" letter-spacing="2.5">Full Stack Developer  ·  5+ Years  ·  30+ Projects</text>
-
-<!-- Separator -->
-<line x1="278" y1="133" x2="868" y2="133" stroke="url(#bord)" stroke-width="1"/>
-
-<!-- ── FOCUS CARD ── -->
-<rect x="278" y="146" width="278" height="145" rx="10" fill="rgba(0,255,170,0.025)" stroke="rgba(0,255,170,0.15)" stroke-width="1">
-  <animate attributeName="stroke-opacity" values="0.15;0.35;0.15" dur="4s" repeatCount="indefinite"/>
-</rect>
-<rect x="278" y="146" width="278" height="3" rx="2" fill="url(#bord)" opacity="0.7"/>
-<text x="292" y="165" font-family="'Courier New', monospace" font-size="9" fill="#00ffaa" letter-spacing="3.5" opacity="0.9">◆  FOCUS AREAS</text>
-<text x="292" y="184" font-family="Arial, sans-serif" font-size="11.5" fill="#c9d1d9">▸  Scalable distributed architectures</text>
-<text x="292" y="201" font-family="Arial, sans-serif" font-size="11.5" fill="#c9d1d9">▸  High-performance REST &amp; GraphQL APIs</text>
-<text x="292" y="218" font-family="Arial, sans-serif" font-size="11.5" fill="#c9d1d9">▸  Modern &amp; accessible interfaces</text>
-<text x="292" y="235" font-family="Arial, sans-serif" font-size="11.5" fill="#c9d1d9">▸  CI/CD automation &amp; DevOps</text>
-<text x="292" y="252" font-family="Arial, sans-serif" font-size="11.5" fill="#c9d1d9">▸  Technical leadership &amp; mentorship</text>
-<text x="292" y="279" font-family="Arial, sans-serif" font-size="11.5" fill="#c9d1d9">▸  Code review &amp; best practices</text>
-
-<!-- ── METHODOLOGY CARD ── -->
-<rect x="568" y="146" width="294" height="145" rx="10" fill="rgba(88,166,255,0.025)" stroke="rgba(88,166,255,0.15)" stroke-width="1">
-  <animate attributeName="stroke-opacity" values="0.15;0.35;0.15" dur="5s" begin="1s" repeatCount="indefinite"/>
-</rect>
-<rect x="568" y="146" width="294" height="3" rx="2" fill="#58a6ff" opacity="0.6"/>
-<text x="582" y="165" font-family="'Courier New', monospace" font-size="9" fill="#58a6ff" letter-spacing="3.5" opacity="0.9">◆  METHODOLOGY</text>
-<text x="582" y="184" font-family="Arial, sans-serif" font-size="11.5" fill="#c9d1d9">▸  Clean Architecture &amp; SOLID Principles</text>
-<text x="582" y="201" font-family="Arial, sans-serif" font-size="11.5" fill="#c9d1d9">▸  Test-Driven Development (TDD)</text>
-<text x="582" y="218" font-family="Arial, sans-serif" font-size="11.5" fill="#c9d1d9">▸  Domain-Driven Design (DDD)</text>
-<text x="582" y="235" font-family="Arial, sans-serif" font-size="11.5" fill="#c9d1d9">▸  Microservices &amp; Event-Driven Design</text>
-<text x="582" y="252" font-family="Arial, sans-serif" font-size="11.5" fill="#c9d1d9">▸  Agile / Scrum methodology</text>
-<text x="582" y="279" font-family="Arial, sans-serif" font-size="11.5" fill="#c9d1d9">▸  DevSecOps &amp; Continuous Delivery</text>
-
-<!-- ══════════════════════════════
-     TECH LOGOS FLOATING CHIPS
-     (all with real brand colors + animated)
-════════════════════════════════ -->
-
-<!-- Row 1 — Main stack -->
-<!-- JS -->
-<g>
-  <rect x="278" y="304" width="72" height="32" rx="7" fill="#1a1a0a" stroke="#F7DF1E" stroke-width="1.2">
-    <animate attributeName="stroke-opacity" values="1;0.4;1" dur="3s" begin="0s" repeatCount="indefinite"/>
-  </rect>
-  <rect x="288" y="312" width="16" height="16" rx="2" fill="#F7DF1E"/>
-  <text x="292" y="325" font-family="Arial, sans-serif" font-size="10" font-weight="900" fill="#000">JS</text>
-  <text x="310" y="325" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#F7DF1E">JS</text>
-</g>
-
-<!-- TS -->
-<g>
-  <rect x="358" y="304" width="76" height="32" rx="7" fill="#0e1a2b" stroke="#3178C6" stroke-width="1.2">
-    <animate attributeName="stroke-opacity" values="1;0.4;1" dur="3.2s" begin="0.2s" repeatCount="indefinite"/>
-  </rect>
-  <rect x="368" y="312" width="16" height="16" rx="2" fill="#3178C6"/>
-  <text x="370" y="325" font-family="Arial, sans-serif" font-size="9" font-weight="900" fill="#fff">TS</text>
-  <text x="390" y="325" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#4FC3F7">TS</text>
-</g>
-
-<!-- React -->
-<g>
-  <rect x="442" y="304" width="76" height="32" rx="7" fill="#0a1e2a" stroke="#61DAFB" stroke-width="1.2">
-    <animate attributeName="stroke-opacity" values="1;0.4;1" dur="2.8s" begin="0.4s" repeatCount="indefinite"/>
-  </rect>
-  <!-- React icon simplified -->
-  <circle cx="459" cy="320" r="3" fill="none" stroke="#61DAFB" stroke-width="1.2"/>
-  <ellipse cx="459" cy="320" rx="9" ry="3.5" fill="none" stroke="#61DAFB" stroke-width="0.9" transform="rotate(30,459,320)"/>
-  <ellipse cx="459" cy="320" rx="9" ry="3.5" fill="none" stroke="#61DAFB" stroke-width="0.9" transform="rotate(-30,459,320)"/>
-  <text x="496" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#61DAFB">React</text>
-</g>
-
-<!-- Node.js -->
-<g>
-  <rect x="526" y="304" width="80" height="32" rx="7" fill="#0a1a0a" stroke="#339933" stroke-width="1.2">
-    <animate attributeName="stroke-opacity" values="1;0.4;1" dur="3.5s" begin="0.1s" repeatCount="indefinite"/>
-  </rect>
-  <!-- Node hex simplified -->
-  <polygon points="537,328 537,314 549,308 561,314 561,328 549,334" fill="none" stroke="#339933" stroke-width="1.2"/>
-  <text x="549" y="324" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" font-weight="900" fill="#339933">N</text>
-  <text x="576" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#69DB7C">Node</text>
-</g>
-
-<!-- Python -->
-<g>
-  <rect x="614" y="304" width="78" height="32" rx="7" fill="#0c1a28" stroke="#3776AB" stroke-width="1.2">
-    <animate attributeName="stroke-opacity" values="1;0.4;1" dur="4s" begin="0.5s" repeatCount="indefinite"/>
-  </rect>
-  <!-- Python simplified snakes -->
-  <path d="M629,314 Q629,310 633,310 L641,310 Q645,310 645,314 L645,318 Q645,322 641,322 L633,322 Q629,322 629,326 L629,330 Q629,334 633,334 L641,334 Q645,334 645,330" fill="none" stroke="#FFD43B" stroke-width="1.2"/>
-  <text x="672" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#FFD43B">Python</text>
-</g>
-
-<!-- Docker -->
-<g>
-  <rect x="700" y="304" width="76" height="32" rx="7" fill="#061825" stroke="#2496ED" stroke-width="1.2">
-    <animate attributeName="stroke-opacity" values="1;0.4;1" dur="2.9s" begin="0.7s" repeatCount="indefinite"/>
-  </rect>
-  <!-- Docker whale simplified -->
-  <rect x="710" y="318" width="5" height="4" rx="1" fill="#2496ED"/>
-  <rect x="717" y="315" width="5" height="7" rx="1" fill="#2496ED"/>
-  <rect x="724" y="317" width="5" height="5" rx="1" fill="#2496ED"/>
-  <path d="M710,323 Q720,330 730,323" fill="none" stroke="#2496ED" stroke-width="1"/>
-  <text x="756" y="325" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#29B6F6">Docker</text>
-</g>
-
-<!-- Row 2 -->
-<!-- Next.js -->
-<g>
-  <rect x="278" y="344" width="80" height="32" rx="7" fill="#111111" stroke="rgba(255,255,255,0.25)" stroke-width="1.2">
-    <animate attributeName="stroke-opacity" values="0.25;0.7;0.25" dur="3.1s" begin="0.3s" repeatCount="indefinite"/>
-  </rect>
-  <text x="288" y="365" font-family="Arial, sans-serif" font-size="18" font-weight="900" fill="white">N</text>
-  <text x="306" y="365" font-family="Arial, sans-serif" font-size="11" font-weight="900" fill="white">ext</text>
-  <text x="328" y="363" font-family="Arial, sans-serif" font-size="9" fill="rgba(255,255,255,0.4)">.js</text>
-</g>
-
-<!-- PostgreSQL -->
-<g>
-  <rect x="366" y="344" width="94" height="32" rx="7" fill="#0a1525" stroke="#336791" stroke-width="1.2">
-    <animate attributeName="stroke-opacity" values="1;0.4;1" dur="3.8s" begin="0.2s" repeatCount="indefinite"/>
-  </rect>
-  <!-- PG elephant ear simplified -->
-  <circle cx="381" cy="360" r="8" fill="none" stroke="#336791" stroke-width="1.5"/>
-  <circle cx="385" cy="355" r="4" fill="none" stroke="#336791" stroke-width="1"/>
-  <text x="432" y="365" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#90CAF9">PostgreSQL</text>
-</g>
-
-<!-- MongoDB -->
-<g>
-  <rect x="468" y="344" width="88" height="32" rx="7" fill="#0a1a0e" stroke="#47A248" stroke-width="1.2">
-    <animate attributeName="stroke-opacity" values="1;0.4;1" dur="4.2s" begin="0.6s" repeatCount="indefinite"/>
-  </rect>
-  <!-- Mongo leaf simplified -->
-  <path d="M483,332 Q483,348 483,366 Q479,358 483,348 Q487,358 483,366" fill="#47A248"/>
-  <text x="512" y="365" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#A5D6A7">MongoDB</text>
-</g>
-
-<!-- Redis -->
-<g>
-  <rect x="564" y="344" width="70" height="32" rx="7" fill="#1a0808" stroke="#DC382D" stroke-width="1.2">
-    <animate attributeName="stroke-opacity" values="1;0.4;1" dur="2.7s" begin="0.9s" repeatCount="indefinite"/>
-  </rect>
-  <!-- Redis cube simplified -->
-  <polygon points="578,352 588,348 598,352 598,364 588,368 578,364" fill="none" stroke="#DC382D" stroke-width="1.2"/>
-  <line x1="578" y1="352" x2="588" y2="356" stroke="#DC382D" stroke-width="0.8"/>
-  <line x1="598" y1="352" x2="588" y2="356" stroke="#DC382D" stroke-width="0.8"/>
-  <line x1="588" y1="356" x2="588" y2="368" stroke="#DC382D" stroke-width="0.8"/>
-  <text x="614" y="365" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#EF9A9A">Redis</text>
-</g>
-
-<!-- AWS -->
-<g>
-  <rect x="642" y="344" width="68" height="32" rx="7" fill="#15100a" stroke="#FF9900" stroke-width="1.2">
-    <animate attributeName="stroke-opacity" values="1;0.4;1" dur="3.6s" begin="0.4s" repeatCount="indefinite"/>
-  </rect>
-  <!-- AWS smile arc -->
-  <path d="M653,355 L663,351 L673,355" fill="none" stroke="#FF9900" stroke-width="1.5"/>
-  <path d="M652,362 Q663,370 674,362" fill="none" stroke="#FF9900" stroke-width="1.5"/>
-  <text x="697" y="365" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#FFB74D">AWS</text>
-</g>
-
-<!-- Row 3 -->
-<!-- NestJS -->
-<g>
-  <rect x="278" y="384" width="76" height="32" rx="7" fill="#1a0610" stroke="#E0234E" stroke-width="1.2">
-    <animate attributeName="stroke-opacity" values="1;0.4;1" dur="3.3s" begin="0.5s" repeatCount="indefinite"/>
-  </rect>
-  <!-- Nest cat ears simplified -->
-  <polygon points="290,398 286,390 294,392" fill="#E0234E" opacity="0.8"/>
-  <polygon points="300,398 296,390 304,392" fill="#E0234E" opacity="0.8"/>
-  <path d="M286,398 Q295,408 304,398" fill="none" stroke="#E0234E" stroke-width="1.5"/>
-  <text x="330" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#F48FB1">NestJS</text>
-</g>
-
-<!-- GraphQL -->
-<g>
-  <rect x="362" y="384" width="80" height="32" rx="7" fill="#1a0015" stroke="#E10098" stroke-width="1.2">
-    <animate attributeName="stroke-opacity" values="1;0.4;1" dur="4.5s" begin="0.3s" repeatCount="indefinite"/>
-  </rect>
-  <!-- GraphQL diamond -->
-  <polygon points="376,400 382,392 388,400 382,408" fill="none" stroke="#E10098" stroke-width="1.5"/>
-  <line x1="376" y1="400" x2="388" y2="400" stroke="#E10098" stroke-width="0.8"/>
-  <text x="418" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#E879F9">GraphQL</text>
-</g>
-
-<!-- Kubernetes -->
-<g>
-  <rect x="450" y="384" width="92" height="32" rx="7" fill="#060e25" stroke="#326CE5" stroke-width="1.2">
-    <animate attributeName="stroke-opacity" values="1;0.4;1" dur="3.9s" begin="0.8s" repeatCount="indefinite"/>
-  </rect>
-  <!-- K8s helm wheel simplified -->
-  <circle cx="466" cy="400" r="8" fill="none" stroke="#326CE5" stroke-width="1.2"/>
-  <circle cx="466" cy="400" r="3" fill="#326CE5" opacity="0.6"/>
-  <line x1="466" y1="392" x2="466" y2="408" stroke="#326CE5" stroke-width="1"/>
-  <line x1="458" y1="396" x2="474" y2="404" stroke="#326CE5" stroke-width="1"/>
-  <line x1="458" y1="404" x2="474" y2="396" stroke="#326CE5" stroke-width="1"/>
-  <text x="494" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#82B1FF">K8s</text>
-  <text x="524" y="405" font-family="Arial, sans-serif" font-size="9" fill="#82B1FF" opacity="0.7">·s</text>
-</g>
-
-<!-- Go -->
-<g>
-  <rect x="550" y="384" width="66" height="32" rx="7" fill="#051822" stroke="#00ADD8" stroke-width="1.2">
-    <animate attributeName="stroke-opacity" values="1;0.4;1" dur="2.6s" begin="1.1s" repeatCount="indefinite"/>
-  </rect>
-  <!-- Go gopher eyes simplified -->
-  <circle cx="565" cy="397" r="3" fill="none" stroke="#00ADD8" stroke-width="1.2"/>
-  <circle cx="573" cy="397" r="3" fill="none" stroke="#00ADD8" stroke-width="1.2"/>
-  <path d="M562,403 Q569,408 576,403" fill="none" stroke="#00ADD8" stroke-width="1"/>
-  <text x="596" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#4DD0E1">Go</text>
-</g>
-
-<!-- GCP -->
-<g>
-  <rect x="624" y="384" width="68" height="32" rx="7" fill="#0a0e1a" stroke="#4285F4" stroke-width="1.2">
-    <animate attributeName="stroke-opacity" values="1;0.4;1" dur="3.7s" begin="0.6s" repeatCount="indefinite"/>
-  </rect>
-  <!-- G icon simplified -->
-  <path d="M636,400 A8,8 0 1 1 644,408 L640,408 L640,401 L636,401" fill="none" stroke="#4285F4" stroke-width="1.5"/>
-  <text x="671" y="405" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="600" fill="#82B1FF">GCP</text>
-</g>
-
-<!-- ══ BOTTOM STATS ══ -->
-<line x1="278" y1="428" x2="868" y2="428" stroke="rgba(0,255,170,0.1)" stroke-width="1"/>
-
-<!-- Stat 1 -->
-<text x="350" y="456" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="30" font-weight="900" fill="#00ffaa" filter="url(#glow6)">5+</text>
-<text x="350" y="474" text-anchor="middle" font-family="'Courier New', monospace" font-size="8.5" fill="#8b949e" letter-spacing="2">YEARS EXP</text>
-
-<line x1="448" y1="436" x2="448" y2="480" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
-
-<!-- Stat 2 -->
-<text x="520" y="456" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="30" font-weight="900" fill="#58a6ff" filter="url(#glow6)">30+</text>
-<text x="520" y="474" text-anchor="middle" font-family="'Courier New', monospace" font-size="8.5" fill="#8b949e" letter-spacing="2">PROJECTS</text>
-
-<line x1="618" y1="436" x2="618" y2="480" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
-
-<!-- Stat 3 -->
-<text x="692" y="456" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="30" font-weight="900" fill="#00ffaa" filter="url(#glow6)">10+</text>
-<text x="692" y="474" text-anchor="middle" font-family="'Courier New', monospace" font-size="8.5" fill="#8b949e" letter-spacing="2">LANGUAGES</text>
-
-<line x1="786" y1="436" x2="786" y2="480" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
-
-<!-- Stat 4 -->
-<text x="835" y="456" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="30" font-weight="900" fill="#58a6ff" filter="url(#glow6)">∞</text>
-<text x="835" y="474" text-anchor="middle" font-family="'Courier New', monospace" font-size="8.5" fill="#8b949e" letter-spacing="2">PASSION</text>
-
-<!-- ══ LEFT BOTTOM – SOCIAL ══ -->
-<text x="40" y="456" text-anchor="middle" font-family="'Courier New', monospace" font-size="8" fill="#8b949e" letter-spacing="1">github.com/</text>
-<text x="40" y="470" text-anchor="middle" font-family="'Courier New', monospace" font-size="9" fill="#00ffaa" letter-spacing="1">luizFelippedev</text>
-
-<!-- animated scan line sweep -->
-<rect x="2" y="0" width="896" height="2" fill="rgba(0,255,170,0.06)" clip-path="url(#card)">
-  <animate attributeName="y" values="-2;522;-2" dur="7s" repeatCount="indefinite" calcMode="linear"/>
-</rect>
+<!-- STATUS pill -->
+<rect x="60" y="304" width="0" height="0" rx="0"/>
+<!-- open-to chip bottom left aligned with last line -->
+<rect x="592" y="311" width="136" height="20" rx="10" fill="rgba(88,166,255,0.08)" stroke="rgba(88,166,255,0.3)" stroke-width="1"/>
+<circle cx="607" cy="321" r="4" fill="#58a6ff">
+  <animate attributeName="opacity" values="1;0.15;1" dur="1.6s" repeatCount="indefinite"/>
+</circle>
+<text x="672" y="325" text-anchor="middle" font-family="'Courier New',monospace" font-size="9" fill="#58a6ff" letter-spacing="1">OPEN TO WORK</text>
 
 </svg>
