@@ -47,7 +47,6 @@ Trago comigo uma bagagem valiosa de experiências anteriores e estou canalizando
 
 ---
 
-[![gif](https://media.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif)](https://giphy.com)
 
 ### ✨ Atualmente
 
