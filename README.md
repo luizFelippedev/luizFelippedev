@@ -2,8 +2,11 @@
   <img src="https://github.com/luizFelippedev.png" width="150" alt="Luiz Andrade" />
 </p>
 
+<h1 align="center">Luiz Andrade</h1>
+
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Manrope&weight=500&size=22&duration=3000&pause=1000&color=D4A24C&center=true&vCenter=true&width=640&height=60&lines=Engenheiro+de+Software;Full+Stack+Developer;Em+transi%C3%A7%C3%A3o+para+a+tecnologia" alt="Engenheiro de Software, Full Stack Developer e Em transição para a tecnologia" />
+  <b>Engenheiro de Software · Full Stack Developer</b><br>
+  <i>Em transição para a tecnologia</i>
 </p>
 
 <p align="center"><i>Transformando experiência de vida em soluções tecnológicas com propósito.</i></p>
@@ -56,12 +59,11 @@
 <h2>Jornada</h2>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=luizFelippedev&bg_color=0B0C0F&color=D4A24C&line=D4A24C&point=F1ECE2&area=true&hide_border=true" alt="Gráfico de atividade no GitHub" />
+  <img src="https://github-readme-stats.vercel.app/api?username=luizFelippedev&show_icons=true&hide_border=true&title_color=D4A24C&text_color=CFC8BA&icon_color=D4A24C&bg_color=0B0C0F" alt="Estatísticas do GitHub" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=luizFelippedev&show_icons=true&hide_border=true&title_color=D4A24C&text_color=CFC8BA&icon_color=D4A24C&bg_color=0B0C0F" alt="Estatísticas do GitHub" />
-  <img src="https://streak-stats.demolab.com?user=luizFelippedev&hide_border=true&background=0B0C0F&ring=D4A24C&fire=D4A24C&currStreakLabel=D4A24C&sideLabels=CFC8BA&dates=A3A09A" alt="Sequência de contribuições" />
+  <img src="https://streak-stats.demolab.com?user=luizFelippedev&background=0B0C0F&ring=D4A24C&fire=D4A24C&currStreakNum=F1ECE2&currStreakLabel=D4A24C&sideNums=F1ECE2&sideLabels=CFC8BA&dates=A3A09A" alt="Sequência de contribuições" />
 </p>
 
 <h2>Contato</h2>
@@ -74,4 +76,3 @@
 </p>
 
 <p align="center"><sub>Obrigado por visitar meu perfil!</sub></p>
-
