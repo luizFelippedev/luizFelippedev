@@ -101,7 +101,7 @@
   <a href="mailto:luizfelippeandrade@outlook.com"><img src="https://img.shields.io/badge/-E--mail-1A1B20?style=for-the-badge&logoColor=D4A24C" alt="E-mail" /></a>
   <a href="https://luizfelippedev.vercel.app/"><img src="https://img.shields.io/badge/-Website-1A1B20?style=for-the-badge&logo=vercel&logoColor=D4A24C" alt="Website" /></a>
   <a href="https://github.com/luizFelippedev"><img src="https://img.shields.io/badge/-GitHub-1A1B20?style=for-the-badge&logo=github&logoColor=D4A24C" alt="GitHub" /></a>
-  <!-- LinkedIn: <a href="https://www.linkedin.com/in/YOUR-USERNAME"><img src="https://img.shields.io/badge/-LinkedIn-1A1B20?style=for-the-badge&logo=linkedin&logoColor=D4A24C" alt="LinkedIn" /></a> -->
+  <a href="https://www.linkedin.com/in/YOUR-USERNAME"><img src="https://img.shields.io/badge/-LinkedIn-1A1B20?style=for-the-badge&logo=linkedin&logoColor=D4A24C" alt="LinkedIn" /></a>
 </p>
 
 <p align="center"><sub>Thanks for visiting my profile!</sub></p>
