@@ -2,7 +2,7 @@
   <img src="https://github.com/luizFelippedev.png" width="150" alt="Luiz Andrade" />
 </p>
 
-<h1 align="center">Luiz Andrade</h1>
+<h1 align="center">Luiz Felippe</h1>
 
 <p align="center">
   <b>Engenheiro de Software · Full Stack Developer</b><br>
